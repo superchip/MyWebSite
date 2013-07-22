@@ -1,1 +1,1 @@
-Building my website using foundation
+Building my website using foundation framework
