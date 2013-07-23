@@ -102,6 +102,28 @@
   <script src="foundation/js/foundation.min.js"></script>
   <script>
     $(document).foundation();
+    $(document).ready(function()
+    {
+        var counter = 0;
+        var combination = "";
+        $(window).bind('keypress', function(e) {
+            counter++;
+            if(counter == 4)
+            {
+                counter = 0;
+                combination = "";
+            }
+
+            //getting the key pressed code
+            combination += (e.keyCode ? e.keyCode : e.which);
+            if(combination == '102117110')
+            {
+                //redirecting
+                window.location.href="fun.html";
+            }
+
+        });
+    });
   </script>
 
 </body>
